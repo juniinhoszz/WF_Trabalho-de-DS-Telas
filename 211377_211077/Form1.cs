@@ -30,7 +30,7 @@ namespace _211377_211077
                 if (txtUser.Text == "teste" && txtSenha.Text == "teste123")
                 {
                     
-                    var mp = new MenuPrincipal();
+                    var mp = new MenuPrincipall();
                     mp.Show();
 
                     this.Visible = false;
