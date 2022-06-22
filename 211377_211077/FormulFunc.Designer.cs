@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormulFunc));
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
             "Juninho",
             "teste",
             "teste123",
@@ -373,6 +373,7 @@
             this.FormCidade.Text = "CADASTRO DE CIDADE";
             this.FormCidade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FormCidade.UseVisualStyleBackColor = false;
+            this.FormCidade.Click += new System.EventHandler(this.FormCidade_Click);
             // 
             // FormProduto
             // 
@@ -385,6 +386,7 @@
             this.FormProduto.Text = "CADASTRO DE PRODUTO";
             this.FormProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FormProduto.UseVisualStyleBackColor = false;
+            this.FormProduto.Click += new System.EventHandler(this.FormProduto_Click);
             // 
             // NegVenda
             // 
@@ -397,6 +399,7 @@
             this.NegVenda.Text = "NEGOCIAÇÃO DE VENDA";
             this.NegVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NegVenda.UseVisualStyleBackColor = false;
+            this.NegVenda.Click += new System.EventHandler(this.NegVenda_Click);
             // 
             // resumoCaixa
             // 
@@ -409,6 +412,7 @@
             this.resumoCaixa.Text = "RESUMO DO CAIXA";
             this.resumoCaixa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resumoCaixa.UseVisualStyleBackColor = false;
+            this.resumoCaixa.Click += new System.EventHandler(this.resumoCaixa_Click);
             // 
             // FormVenda
             // 
@@ -421,6 +425,7 @@
             this.FormVenda.Text = "FORMULÁRIO DE VENDA";
             this.FormVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FormVenda.UseVisualStyleBackColor = false;
+            this.FormVenda.Click += new System.EventHandler(this.FormVenda_Click);
             // 
             // FormFuncionario
             // 
@@ -580,13 +585,13 @@
             this.administrador});
             this.listUsers.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listUsers.HideSelection = false;
-            listViewItem1.Tag = "";
+            listViewItem6.Tag = "";
             this.listUsers.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem6});
             this.listUsers.Location = new System.Drawing.Point(357, 427);
             this.listUsers.Name = "listUsers";
             this.listUsers.Size = new System.Drawing.Size(607, 153);
-            this.listUsers.TabIndex = 72;
+            this.listUsers.TabIndex = 73;
             this.listUsers.UseCompatibleStateImageBehavior = false;
             this.listUsers.View = System.Windows.Forms.View.Details;
             // 
@@ -620,7 +625,7 @@
             this.btnInserir.Location = new System.Drawing.Point(428, 365);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(421, 46);
-            this.btnInserir.TabIndex = 73;
+            this.btnInserir.TabIndex = 72;
             this.btnInserir.Text = "INSERIR FUNCIONÁRIO";
             this.btnInserir.UseVisualStyleBackColor = false;
             this.btnInserir.Click += new System.EventHandler(this.btnEntrar_Click);

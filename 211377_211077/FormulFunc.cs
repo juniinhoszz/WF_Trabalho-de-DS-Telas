@@ -99,5 +99,45 @@ namespace _211377_211077
             lista});
 
         }
+
+        private void FormCidade_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Essa função ainda não está disponivel!",
+                            "Ops...",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+        }
+
+        private void FormProduto_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Essa função ainda não está disponivel!",
+                            "Ops...",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+        }
+
+        private void NegVenda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Essa função ainda não está disponivel!",
+                            "Ops...",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+        }
+
+        private void FormVenda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Essa função ainda não está disponivel!",
+                            "Ops...",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+        }
+
+        private void resumoCaixa_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Essa função ainda não está disponivel!",
+                            "Ops...",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+        }
     }
 }

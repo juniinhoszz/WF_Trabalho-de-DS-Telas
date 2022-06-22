@@ -112,6 +112,7 @@
             this.FormVenda.Text = "FORMULÁRIO DE VENDA";
             this.FormVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FormVenda.UseVisualStyleBackColor = false;
+            this.FormVenda.Click += new System.EventHandler(this.FormVenda_Click);
             // 
             // resumoCaixa
             // 
@@ -124,6 +125,7 @@
             this.resumoCaixa.Text = "RESUMO DO CAIXA";
             this.resumoCaixa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.resumoCaixa.UseVisualStyleBackColor = false;
+            this.resumoCaixa.Click += new System.EventHandler(this.resumoCaixa_Click);
             // 
             // NegVenda
             // 
@@ -136,6 +138,7 @@
             this.NegVenda.Text = "NEGOCIAÇÃO DE VENDA";
             this.NegVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NegVenda.UseVisualStyleBackColor = false;
+            this.NegVenda.Click += new System.EventHandler(this.NegVenda_Click);
             // 
             // FormProduto
             // 
@@ -148,6 +151,7 @@
             this.FormProduto.Text = "CADASTRO DE PRODUTO";
             this.FormProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FormProduto.UseVisualStyleBackColor = false;
+            this.FormProduto.Click += new System.EventHandler(this.FormProduto_Click);
             // 
             // FormCidade
             // 
@@ -160,6 +164,7 @@
             this.FormCidade.Text = "CADASTRO DE CIDADE";
             this.FormCidade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FormCidade.UseVisualStyleBackColor = false;
+            this.FormCidade.Click += new System.EventHandler(this.FormCidade_Click);
             // 
             // FormCliente
             // 
