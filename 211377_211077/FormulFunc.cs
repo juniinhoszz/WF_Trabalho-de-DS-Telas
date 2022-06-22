@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace _211377_211077
 {
-    public partial class MenuPrincipall : Form
+    public partial class FormulFunc : Form
     {
-        public MenuPrincipall()
+        public FormulFunc()
         {
             InitializeComponent();
             string usuario = " Juninho";
             user.Text = user.Text + usuario;
             
-        }
 
-        private void btnAdc_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("Essa função ainda não está disponivel!",
-                            "Ops...",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-        }
 
+
+        }
+        
         private void btnAtt_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Essa função ainda não está disponivel!",
@@ -65,19 +60,44 @@ namespace _211377_211077
             Application.Exit();
         }
 
-        private void MenuPrincipalvoltar_Click(object sender, EventArgs e)
+        private void btnAdc_Click(object sender, EventArgs e)
         {
-            MenuPrincipalvoltar.BackColor = Color.RoyalBlue;
-            
+            MessageBox.Show("Essa função ainda não está disponivel!",
+                            "Ops...",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
         }
 
-        private void FormFuncionario_Click(object sender, EventArgs e)
+        private void MenuPrincipalvoltar_Click(object sender, EventArgs e)
         {
-            var formfunc = new FormulFunc();
+            var mnp = new MenuPrincipall();
 
-            formfunc.Show();
-
+            mnp.Show();
             this.Visible = false;
+        }
+        string admin;
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            
+            if(adm.Checked == true)
+            {
+                    admin = "é administrador";
+            }else
+            {
+                admin = "não é administrador";
+            }
+            
+
+
+            System.Windows.Forms.ListViewItem lista = new System.Windows.Forms.ListViewItem(new string[] {
+            nomee.Text,
+            userAcesso.Text,
+            senhaa.Text,
+            admin}, -1);
+
+            this.listUsers.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            lista});
+
         }
     }
 }

@@ -16,7 +16,7 @@ namespace _211377_211077
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new FormulFunc());
         }
     }
 }

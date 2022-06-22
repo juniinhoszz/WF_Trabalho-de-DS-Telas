@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipall));
             this.FormFuncionario = new System.Windows.Forms.Button();
-            this.analiseGerenc = new System.Windows.Forms.Button();
+            this.MenuPrincipalvoltar = new System.Windows.Forms.Button();
             this.FormVenda = new System.Windows.Forms.Button();
             this.resumoCaixa = new System.Windows.Forms.Button();
             this.NegVenda = new System.Windows.Forms.Button();
@@ -86,18 +86,20 @@
             this.FormFuncionario.Text = "CADASTRO DE FUNCIONÁRIO";
             this.FormFuncionario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FormFuncionario.UseVisualStyleBackColor = false;
+            this.FormFuncionario.Click += new System.EventHandler(this.FormFuncionario_Click);
             // 
-            // analiseGerenc
+            // MenuPrincipalvoltar
             // 
-            this.analiseGerenc.BackColor = System.Drawing.Color.White;
-            this.analiseGerenc.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.analiseGerenc.Location = new System.Drawing.Point(-4, 452);
-            this.analiseGerenc.Name = "analiseGerenc";
-            this.analiseGerenc.Size = new System.Drawing.Size(338, 50);
-            this.analiseGerenc.TabIndex = 7;
-            this.analiseGerenc.Text = "ANÁLISE GERENCIAL";
-            this.analiseGerenc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.analiseGerenc.UseVisualStyleBackColor = false;
+            this.MenuPrincipalvoltar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.MenuPrincipalvoltar.Font = new System.Drawing.Font("Tw Cen MT", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuPrincipalvoltar.Location = new System.Drawing.Point(-4, 452);
+            this.MenuPrincipalvoltar.Name = "MenuPrincipalvoltar";
+            this.MenuPrincipalvoltar.Size = new System.Drawing.Size(338, 50);
+            this.MenuPrincipalvoltar.TabIndex = 7;
+            this.MenuPrincipalvoltar.Text = "MENU PRINCIPAL";
+            this.MenuPrincipalvoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MenuPrincipalvoltar.UseVisualStyleBackColor = false;
+            this.MenuPrincipalvoltar.Click += new System.EventHandler(this.MenuPrincipalvoltar_Click);
             // 
             // FormVenda
             // 
@@ -482,7 +484,7 @@
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.analiseGerenc);
+            this.Controls.Add(this.MenuPrincipalvoltar);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.user);
             this.Controls.Add(this.FormCliente);
@@ -522,7 +524,7 @@
         #endregion
 
         private System.Windows.Forms.Button FormFuncionario;
-        private System.Windows.Forms.Button analiseGerenc;
+        private System.Windows.Forms.Button MenuPrincipalvoltar;
         private System.Windows.Forms.Button FormVenda;
         private System.Windows.Forms.Button resumoCaixa;
         private System.Windows.Forms.Button NegVenda;
